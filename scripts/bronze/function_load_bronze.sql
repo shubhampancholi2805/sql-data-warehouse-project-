@@ -1,6 +1,6 @@
 /*
 ===============================================================================
-Stored Procedure: Load Bronze Layer (Source -> Bronze)
+Function Load Bronze Layer (Source -> Bronze)
 ===============================================================================
 Script Purpose:
     This script implements a PostgreSQL function to load data into the Bronze layer. The function orchestrates the ingestion process by truncating existing Bronze tables, bulk-loading source data, handling errors using exception blocks, and logging execution details such as load status and duration. This approach ensures repeatable, controlled, and auditable data ingestion, similar to stored procedures used in enterprise ETL pipelines.
